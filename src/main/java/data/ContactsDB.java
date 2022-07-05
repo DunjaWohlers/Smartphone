@@ -1,5 +1,6 @@
 package data;
 
+import model.BusinessContact;
 import model.Contact;
 import model.Friend;
 
@@ -12,10 +13,10 @@ public class ContactsDB {
         Contact friend2 = new Friend ("Moin", "Otto", "XXX/TTT");
         Contact friend3 = new Friend ("Paul", "Brot", "$$$/???");
         Contact friend4 = new Friend ("Bob", "Bert", "123/888");
-        Contact[] ar = {friend1,friend2,friend3,friend4};
-        this.friends = new Friend[4];
-        for(int i=0;i<4;i++){
-
+        Contact contact1 = new BusinessContact("Bob", "Bert", "XCompany");
+        Contact[] ar = {friend1,friend2,friend3,friend4,contact1};
+        this.friends = new Contact[ar.length];
+        for(int i=0;i<ar.length;i++){
             this.friends[i]= ar[i];
         }
 

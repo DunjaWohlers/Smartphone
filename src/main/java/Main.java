@@ -23,5 +23,12 @@ public class Main {
         System.out.println(smart1);
         System.out.println(smart1.getRadioStatus());
 
+        System.out.println("Adde Kontakt:");
+        smart1.addContact(friends[0]);
+        System.out.println(smart1);
+
+        System.out.println("Entferne Paul Brot (pos 3)");
+        smart1.deleteContact(friends[2].getFirstName());
+        System.out.println(smart1);
     }
 }
